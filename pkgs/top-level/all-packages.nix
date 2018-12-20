@@ -22924,6 +22924,8 @@ in
 
   webfs = callPackage ../servers/http/webfs { };
 
+  wii-u-gc-adapter = callPackage ../misc/drivers/wii-u-gc-adapter { };
+
   wikicurses = callPackage ../applications/misc/wikicurses {
     pythonPackages = python3Packages;
   };
