@@ -18,6 +18,8 @@ stdenv.mkDerivation rec {
   installPhase = ''
     mkdir -p $out/bin
     cp ./wii-u-gc-adapter $out/bin
+    mkdir -p $out/lib/udev/rules.d/
+    echo SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTRS{idVendor}=="057e", ATTRS{idProduct}=="0337", MODE="0666" > $out/lib/udev/rules.d/51-gamecube-adapter.rules
   '';
 
   buildInputs = [ libudev libusb1 pkgconfig ];
