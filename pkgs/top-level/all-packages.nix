@@ -6502,6 +6502,8 @@ in
 
   seexpr = callPackage ../development/compilers/seexpr { };
 
+  session-desktop-bin = callPackage ../applications/networking/instant-messengers/session-desktop-bin { };
+
   setroot = callPackage  ../tools/X11/setroot { };
 
   setserial = callPackage ../tools/system/setserial { };
