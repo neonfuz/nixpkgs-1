@@ -7,8 +7,8 @@
 }:
 
 let
-  majorVersion = "0.0.12";
-  gitVersion = "10811-a86a3d2fe"; # echo $(git rev-list HEAD --count)-$(git rev-parse --short HEAD)
+  majorVersion = "0.0.14";
+  gitVersion = "11506-2b8eb8deb"; # echo $(git rev-list HEAD --count)-$(git rev-parse --short HEAD)
 in
 mkDerivation {
   pname = "rpcs3";
