@@ -17,7 +17,7 @@ mkDerivation {
   src = fetchgit {
     url = "https://github.com/RPCS3/rpcs3";
     rev = "v${majorVersion}";
-    sha256 = "182rkmbnnlcfzam4bwas7lwv10vqiqvvaw3299a3hariacd7rq8x";
+    sha256 = "1yjjqp8v8hhq1g2kd4pwwqb7pxx9h0byhpc0gnpzasvi9vf39z37";
   };
 
   preConfigure = ''
