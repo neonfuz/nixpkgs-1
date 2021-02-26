@@ -3721,6 +3721,8 @@ in
     inherit (darwin.apple_sdk.frameworks) CoreBluetooth ForceFeedback IOKit OpenGL;
   };
 
+  slippi-bin = callPackage ../misc/emulators/slippi-bin { };
+
   domoticz = callPackage ../servers/domoticz { };
 
   doomseeker = qt5.callPackage ../applications/misc/doomseeker { };
